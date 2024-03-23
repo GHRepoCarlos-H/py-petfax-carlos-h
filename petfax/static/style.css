@@ -21,10 +21,12 @@ img {
     box-sizing: border-box;
     padding: 10px;
     text-align: center;
+    
 }
 
 .images-display .image-item p {
     max-width: 100%;
+    color: white;
 }
 
 
