@@ -16,9 +16,11 @@
                 <p>{{pet.pet_fact}}</p>
                 <img src="{{pet.pet_photo}}" alt="Photo of pet">
                 <a href="/pets/{{pet.pet_id}}"> Learn More</a>
-            </div>
-            
+            </div> 
         {% endfor %}
+    </div>
+    <div class="new-fact">
+        <a href="/pets/facts/new">Submit a new fact!</a>
     </div>
 </body>
 </html>

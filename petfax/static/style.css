@@ -14,7 +14,6 @@ img {
     justify-content: center; 
     align-items: flex-start; 
     position: relative;
-    animation: glow 5s infinite alternate;
 }
 
 .images-display .image-item {
@@ -28,23 +27,9 @@ img {
     max-width: 100%;
 }
 
-@keyframes glow {
-    0% {
-        border-color: pink;
-        box-shadow: 0 0 10px pink;
-    }
-    50% {
-        border-color: blue;
-        box-shadow: 0 0 10px blue;
-    }
-    100% {
-        border-color: green; 
-        box-shadow: 0 0 10px green; 
-    }
-}
 
 h1, p{
-    color: purple;
+    color: white;
     text-align: center;
 }
 
@@ -55,31 +40,71 @@ p{
 
 .card-container {
     width: 300px;
-    height: 700px; 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 20px;
-    background-color: #fff;
+    background-color: #cfbbbb;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
 
-.card-container h1 {
-    font-size: 24px;
+.card-container h1, .card-container, p {
+    text-align: left;
+    color: rgb(155, 20, 218);
+}
+
+.card-container form {
+    margin-top: 20px;
+}
+
+.card-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card-container input[type="text"],
+.card-container textarea {
+    width: calc(100% - 22px);
+    padding: 6px;
     margin-bottom: 10px;
 }
 
-.card-container p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.card-container img {
+.card-container input[type="submit"] {
     width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
+.card-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.card-container a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-container a:hover {
+    text-decoration: underline;
+}
+
+.new-fact{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2em;
+    background-color: green;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
